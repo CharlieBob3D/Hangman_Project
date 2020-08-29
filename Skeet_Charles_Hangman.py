@@ -6,7 +6,6 @@
 
 import random
 import string
-from IPython.display import clear_output
 
 
 # In[ ]:
@@ -106,12 +105,10 @@ def hangman():
         else:
             print("\nBad guess")
     if lives == 0:
-        clear_output()
         hang_the_figure(lives)
         print("You lose")
         print("The word was:","".join(word).capitalize())
     else:
-        clear_output()
         hang_the_figure(lives)
         print("Congratulations you win")
         print("The word is:","".join(word).capitalize())
